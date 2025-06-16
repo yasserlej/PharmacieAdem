@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharmacie Adem Leila</title>
+
+  <!-- Font Awesome pour les icônes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Quicksand:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #00796B, #26a69a);
+      color: #fff;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-container img {
+      width: 100px;
+      height: auto;
+      border-radius: 12px;
+      background-color: white;
+      padding: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .bilingual {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .fr {
+      font-family: 'Quicksand', sans-serif;
+      border-right: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .ar {
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      text-align: right;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      margin-top: 20px;
+    }
+
+    .convention {
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 10px;
+      margin: 20px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    p, li {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      font-size: 28px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #ffd54f;
+    }
+
+    @media (max-width: 768px) {
+      .bilingual {
+        flex-direction: column;
+      }
+
+      .fr {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="logo-container">
+      <!-- Le fichier "logo.png" doit être dans le même dossier que ce fichier HTML -->
+      <img src="logo.png" alt="Logo Pharmacie">
+    </div>
+
+    <div class="bilingual">
+      <!-- Colonne Français -->
+      <div class="column fr">
+        <h1>Pharmacie Adem Leila Eps Ydri</h1>
+
+        <div class="convention">Conventionnée CNAS • CASNOS • CAMSSP</div>
+
+        <p><strong>Adresse :</strong><br>07 Rue Bounatiro Djelloul, Kolea, W. Tipaza</p>
+        <p><strong>Horaires :</strong><br>Du Samedi au Jeudi : 08h30 - 20h00<br>Vendredi : Fermé</p>
+        <p><strong>Téléphone :</strong><br>024 38 50 98</p>
+
+        <h2>Nos Services :</h2>
+        <ul>
+          <li>Conseils pharmaceutiques personnalisés</li>
+          <li>Vente de médicaments avec et sans ordonnance</li>
+          <li>Vaccinations et autres services de santé</li>
+        </ul>
+      </div>
+
+      <!-- Colonne Arabe -->
+      <div class="column ar">
+        <h1>صيدلية آدم ليلى</h1>
+
+        <div class="convention">متعاقدة مع CNAS • CASNOS • CAMSSP</div>
+
+        <p><strong>العنوان:</strong><br>07 شارع بوناطيرو جلول، القليعة، ولاية تيبازة</p>
+        <p><strong>ساعات العمل:</strong><br>من السبت إلى الخميس: 08:30 - 20:00<br>الجمعة: مغلق</p>
+        <p><strong>رقم الهاتف:</strong><br><span dir="ltr">024 38 50 98</span></p>
+
+        <h2>خدماتنا:</h2>
+        <ul>
+          <li>نصائح صيدلانية مخصصة</li>
+          <li>بيع الأدوية بوصفة طبية وبدون وصفة</li>
+          <li>التلقيحات وخدمات صحية أخرى</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Liens réseaux sociaux -->
+    <div class="social-links">
+      <a href="https://www.instagram.com/pharmacieademleilaep/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61559746627138" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.tiktok.com/@pharmacieademleilaepydri" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
